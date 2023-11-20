@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ "css/header.css" | relURL }}" /> <link
+    rel="stylesheet" href="{{ "css/reset.css" | relURL }}" /> <link
+    rel="stylesheet" href="{{ "css/main.css" | relURL }}" /> <link
+    rel="stylesheet" href="{{ "css/section.css" | relURL }}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="..."
+      crossorigin="anonymous"
+    />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuBtn = document.querySelector(".menu-btn");
+        const menu = document.querySelector("header ul");
+        const nav = document.querySelector("header nav");
+        const body = document.querySelector("body");
+        const section = document.querySelector("section");
+
+        menuBtn.addEventListener("click", () => {
+          menu.classList.toggle("show");
+          body.classList.toggle("menu-open");
+          nav.style.borderBottom = menu.classList.contains("show")
+            ? "none"
+            : "1px solid white";
+          section.style.display =
+            section.style.display === "none" ? "block" : "none";
+        });
+        // ON DOIT REFRESH A CHAQUE FOIS POUR QUE LE BOUTON APPARAIT MAIS LA LOGIQUE EST LÀ ET FONCTIONNE
+        //   if (window.innerWidth > 964) {
+        //     const redCircle = document.createElement("div");
+        //     redCircle.style.position = "fixed";
+        //     redCircle.style.bottom = "0";
+        //     redCircle.style.right = "0";
+        //     redCircle.style.width = "3%";
+        //     redCircle.style.height = "6%";
+        //     redCircle.style.backgroundColor = "#c1271d";
+        //     redCircle.style.zIndex = "1000";
+        //     redCircle.style.borderRadius = "50%";
+        //     redCircle.style.margin = "1rem";
+        //     redCircle.style.display = "flex";
+        //     redCircle.style.alignItems = "center";
+        //     redCircle.style.justifyContent = "center";
+
+        //     const icon = document.createElement("i");
+        //     icon.className = "fab fa-facebook-messenger";
+        //     icon.style.color = "white";
+        //     icon.style.fontSize = "200%";
+
+        //     redCircle.appendChild(icon);
+        //     body.appendChild(redCircle);
+        //   }
+      });
+    </script>
+
+    <title>sarrazinconstruction</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <span style="cursor: pointer" class="logo"
+          >{{ with .Site.GetPage "logo.md" }} {{ .Content }} {{ end }}</span
+        >
+        <nav>
+          {{ with .Site.GetPage "navbar.md" }} {{ .Content }} {{ end }} <img
+          src="{{ "images/menu-btn.png" }}" alt="Menu" class="menu-btn" />
+        </nav>
+      </div>
+      <div class="contenu">
+        <div class="text">
+          <div class="title">
+            <h1>fiers <br />bâtisseurs</h1>
+          </div>
+          <div class="slogan">
+            <p>
+              de maisons de qualité <br />
+              dans les Laurentides <br />
+              depuis 1992.
+            </p>
+          </div>
+          <div class="button">
+            {{ with .Site.GetPage "button.md" }}{{ .Content }}{{ end }}
+          </div>
+        </div>
+        <div class="galerie">
+          <div class="cuisine">
+            {{ with .Site.GetPage "cuisine.md" }}{{ .Content }}{{ end }}
+          </div>
+
+          <div class="employe">
+            {{ with .Site.GetPage "travailleur.md" }}{{ .Content }}{{ end }}
+          </div>
+          <div class="socials">
+            <p>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/SarrazinConstruction/"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </p>
+            <p>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/sarrazinconstruction/"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </p>
+            <p class="pinterest">
+              <a
+                target="_blank"
+                href="https://www.pinterest.ca/sarrazinconstruction/"
+              >
+                <i class="fab fa-pinterest"></i>
+              </a>
+            </p>
+            <p>Suivez-nous</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="badge">
+        {{ with .Site.GetPage "section.md" }}{{ .Content }}{{ end }}
+      </div>
+
+      <button>En savoir plus</button>
+    </section>
+  </body>
+</html>
