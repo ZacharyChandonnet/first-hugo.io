@@ -284,6 +284,7 @@ header .contenu .galerie .socials p .fab:hover {
     padding: 0;
     margin-top: inherit;
     position: inherit;
+    height: inherit !important;
   }
   header .contenu .text {
     width: 40vw;
