@@ -39,7 +39,7 @@ header ul {
 header ul.show {
   display: flex;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   header ul {
     position: static;
     transform: none;
@@ -186,7 +186,7 @@ header .contenu .galerie .socials p .fab:hover {
   color: #f2f0f2;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   header {
     display: flex;
   }
@@ -288,8 +288,10 @@ header .contenu .galerie .socials p .fab:hover {
   }
   header .contenu .text {
     width: 40vw;
-    margin-top: 15vh !important;
     position: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   header .contenu .text .title h1 {
     font-size: 4vw;
@@ -312,6 +314,7 @@ header .contenu .galerie .socials p .fab:hover {
     justify-content: center;
     font-size: 1.2rem;
     padding: 0.1rem;
+    margin-top: initial !important;
   }
   header .contenu .galerie {
     display: flex;

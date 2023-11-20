@@ -327,8 +327,11 @@ header {
 
       .text {
         width: 40vw;
-        margin-top: 15vh !important;
         position: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
 
         .title {
           h1 {
@@ -355,6 +358,7 @@ header {
           justify-content: center;
           font-size: 1.2rem;
           padding: 0.1rem;
+          margin-top: initial !important;
         }
       }
 
