@@ -1,4 +1,7 @@
 [build]
   command = "hugo"
   publish = "public"
-  environment = { HUGO_VERSION = "0.88.1" }
+  # Specify the Hugo version. Make sure it matches the version you have locally.
+  environment = { HUGO_VERSION = "0.120.3" }
+
+# Additional configurations can go here if needed
