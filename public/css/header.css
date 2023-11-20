@@ -1,0 +1,374 @@
+html {
+  color: #f2f0f2;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  background-color: #403c3b;
+}
+
+body {
+  overflow: hidden;
+}
+
+.menu-open .contenu {
+  display: none;
+}
+
+header .logo img {
+  width: 164px;
+  height: 47.56px;
+  margin: 1rem;
+}
+header nav {
+  border-bottom: 1px solid white;
+}
+header ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+header ul.show {
+  display: flex;
+}
+@media (min-width: 768px) {
+  header ul {
+    position: static;
+    transform: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+    justify-content: flex-end;
+  }
+}
+header .menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  margin: 1.5rem;
+}
+header .contenu {
+  margin: 0 auto;
+  margin-top: 2rem;
+  height: 65vh;
+  display: flex;
+}
+header .contenu .text {
+  position: absolute;
+  z-index: 1;
+  padding: 1rem;
+}
+header .contenu .text .title h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+}
+header .contenu .text .slogan {
+  line-height: 1.5rem;
+}
+header .contenu .text .button {
+  background-color: #c1271d;
+  color: white;
+  cursor: pointer;
+  font-weight: lighter;
+  width: 114px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-top: 2rem;
+  padding: 0.2rem;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+header .contenu .text .button:hover {
+  background-color: #ad251b;
+}
+header .contenu .galerie {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+header .contenu .galerie .cuisine {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+header .contenu .galerie .cuisine img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 0.5;
+}
+header .contenu .galerie .employe {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45%;
+  height: 35%;
+}
+header .contenu .galerie .employe img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+header .contenu .galerie .socials {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8%;
+}
+header .contenu .galerie .socials .pinterest {
+  position: relative;
+}
+header .contenu .galerie .socials .pinterest:after {
+  content: "";
+  height: 10vh;
+  display: block;
+  background: #ededed;
+  width: 2px;
+  max-height: 50px;
+  margin-top: 2rem;
+}
+header .contenu .galerie .socials p {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+header .contenu .galerie .socials p:not(:first-child) {
+  margin-top: 1.5rem;
+}
+header .contenu .galerie .socials p .fab {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+header .contenu .galerie .socials p .fab {
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+header .contenu .galerie .socials p .fab:hover {
+  color: #c1271d;
+}
+
+* a {
+  color: #f2f0f2;
+}
+
+@media (min-width: 768px) {
+  header {
+    display: flex;
+  }
+  header nav {
+    border-bottom: none;
+  }
+  header .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header ul {
+    transform: none;
+    position: inherit;
+    margin-right: 2rem;
+  }
+  header ul li {
+    position: relative;
+  }
+  header ul li::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.2s ease-in-out;
+  }
+  header ul li:hover::before {
+    border-color: #c1271d;
+    padding-top: 5px;
+  }
+  header .menu-btn {
+    display: none;
+  }
+  header .contenu {
+    margin-top: inherit !important;
+  }
+  header .contenu .text {
+    margin-top: 4rem !important;
+  }
+  header .contenu .text .title h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  header .contenu .text .slogan {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+  }
+  header .contenu .text .button {
+    margin-top: 2.5rem;
+  }
+  header .contenu .galerie {
+    height: 80vh;
+  }
+  header .contenu .galerie .cuisine {
+    width: 95%;
+  }
+  header .contenu .galerie .cuisine img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .contenu .galerie .employe {
+    width: 42%;
+    height: 42%;
+  }
+  header .contenu .socials {
+    width: 4% !important;
+  }
+}
+@media (min-width: 964px) {
+  body {
+    overflow: visible;
+  }
+  header .nav-bar {
+    padding-left: 5vw;
+    padding-right: 4vw;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .menu-btn {
+    cursor: pointer;
+  }
+  header nav ul {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  header .contenu {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 3rem;
+    width: 90vw;
+    padding: 0;
+    margin-top: inherit;
+    position: inherit;
+  }
+  header .contenu .text {
+    width: 40vw;
+    margin-top: 15vh !important;
+    position: inherit;
+  }
+  header .contenu .text .title h1 {
+    font-size: 4vw;
+    line-height: 4.1vw;
+    font-weight: bold;
+    align-items: center;
+    margin-top: inherit !important;
+  }
+  header .contenu .text .slogan {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  header .contenu .text .button {
+    width: 175px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 0.1rem;
+  }
+  header .contenu .galerie {
+    display: flex;
+    width: 60vw !important;
+    position: relative !important;
+    height: 80vh !important;
+    max-height: 51vw !important;
+    margin-right: 1.3rem !important;
+  }
+  header .contenu .galerie .cuisine {
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  header .contenu .galerie .cuisine img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    opacity: 1 !important;
+  }
+  header .contenu .galerie .employe {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 30%;
+    width: 30%;
+  }
+  header .contenu .galerie .employe img {
+    width: 100%;
+    height: 100%;
+    margin: inherit;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  header .contenu .galerie .socials p {
+    margin-top: 2.5rem;
+  }
+  header .contenu .galerie .socials p:last-child {
+    margin-right: 0;
+  }
+  header .contenu .galerie .socials .fab {
+    font-size: 1.3rem !important;
+    cursor: pointer;
+    transition: color 0.5s;
+  }
+  header .contenu .galerie .socials .fab:hover {
+    color: #c1271d;
+  }
+}
+@media (min-width: 1024px) {
+  header nav ul {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=header.css.map */

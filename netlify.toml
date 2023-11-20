@@ -1,5 +1,4 @@
 [build]
   command = "hugo"
   publish = "public"
-  ignore = "node_modules, src, scripts"
   environment = { HUGO_VERSION = "0.88.1" }
