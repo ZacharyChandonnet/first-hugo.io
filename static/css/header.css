@@ -261,6 +261,7 @@ header .contenu .galerie .socials p .fab:hover {
   header .nav-bar {
     padding-left: 5vw;
     padding-right: 4vw;
+    padding-top: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
