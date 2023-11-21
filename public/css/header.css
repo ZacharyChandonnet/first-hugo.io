@@ -225,9 +225,6 @@ header .contenu .galerie .socials p .fab:hover {
   header .contenu {
     margin-top: inherit !important;
   }
-  header .contenu .text {
-    margin-top: 4rem !important;
-  }
   header .contenu .text .title h1 {
     font-size: 2.5rem;
     line-height: 3rem;

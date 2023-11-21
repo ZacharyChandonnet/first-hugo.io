@@ -42,7 +42,7 @@ html {
     font-size: 0.9rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .section {
     padding-left: 8vw;
     padding-right: 8vw;
