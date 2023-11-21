@@ -54,17 +54,13 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 4rem;
-  }
-
-  @media (min-width: 1400px) {
-    margin-top: 14.5rem !important;
+    margin-top: 4rem !important;
   }
 
   @media (min-width: 504px) {
-    margin-top: 5rem;
+    margin-top: 5rem !important;
   }
   @media (min-width: 644px) {
-    margin-top: 11rem;
+    margin-top: 11rem !important;
   }
 }

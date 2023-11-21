@@ -51,21 +51,16 @@ html {
 }
 @media (min-width: 964px) {
   .section {
-    margin-top: 4rem;
-  }
-}
-@media (min-width: 1400px) {
-  .section {
-    margin-top: 14.5rem !important;
+    margin-top: 4rem !important;
   }
 }
 @media (min-width: 504px) {
   .section {
-    margin-top: 5rem;
+    margin-top: 5rem !important;
   }
 }
 @media (min-width: 644px) {
   .section {
-    margin-top: 11rem;
+    margin-top: 11rem !important;
   }
 }/*# sourceMappingURL=section.css.map */
