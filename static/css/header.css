@@ -75,7 +75,7 @@ header .contenu .text .title h1 {
   text-transform: uppercase;
   font-size: 2rem;
   line-height: 2rem;
-  margin-top: 14rem;
+  margin-top: 8rem;
   margin-bottom: 1rem;
 }
 header .contenu .text .slogan {
@@ -228,6 +228,7 @@ header .contenu .galerie .socials p .fab:hover {
   header .contenu .text .title h1 {
     font-size: 2.5rem;
     line-height: 3rem;
+    margin-top: 14rem !important;
   }
   header .contenu .text .slogan {
     font-size: 1.5rem;
